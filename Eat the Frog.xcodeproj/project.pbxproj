@@ -1,0 +1,1075 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05DA1D212D16907F0014944F /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D202D16907F0014944F /* ConfettiSwiftUI */; };
+		05DA1D282D16B4B10014944F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05DA1D272D16B4B10014944F /* GoogleService-Info.plist */; };
+		05DA1D2B2D16BA580014944F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D2A2D16BA580014944F /* FirebaseAnalytics */; };
+		05DA1D2D2D16BA580014944F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D2C2D16BA580014944F /* FirebaseAuth */; };
+		05DA1D2F2D16BA580014944F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D2E2D16BA580014944F /* FirebaseCrashlytics */; };
+		05DA1D312D16BA580014944F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D302D16BA580014944F /* FirebaseFirestore */; };
+		05DA1D332D16BA580014944F /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D322D16BA580014944F /* FirebasePerformance */; };
+		05EB987B2D151A7B008BEFC1 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB987A2D151A7B008BEFC1 /* ManagedSettings.framework */; };
+		05EB987D2D151A7B008BEFC1 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB987C2D151A7B008BEFC1 /* ManagedSettingsUI.framework */; };
+		05EB98852D151A7B008BEFC1 /* ShieldConfig.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05EB98A02D151EB9008BEFC1 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB987A2D151A7B008BEFC1 /* ManagedSettings.framework */; };
+		05EB98A82D151EB9008BEFC1 /* ShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05EB999F2D168C4B008BEFC1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */; };
+		05EB9A0F2D168E2D008BEFC1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */; };
+		05EB9A102D168E2D008BEFC1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */; };
+		05EB9A112D168E2D008BEFC1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */; };
+		05EB9A122D168E2D008BEFC1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05EB98832D151A7B008BEFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FDE35F2D0BDAED006A81FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05EB98772D151A7B008BEFC1;
+			remoteInfo = ShieldConfig;
+		};
+		05EB98A62D151EB9008BEFC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FDE35F2D0BDAED006A81FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05EB989E2D151EB9008BEFC1;
+			remoteInfo = ShieldAction;
+		};
+		05FDE3782D0BDAEE006A81FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FDE35F2D0BDAED006A81FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FDE3662D0BDAED006A81FD;
+			remoteInfo = "Eat the Frog";
+		};
+		05FDE3822D0BDAEE006A81FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FDE35F2D0BDAED006A81FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FDE3662D0BDAED006A81FD;
+			remoteInfo = "Eat the Frog";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05EB988A2D151A7B008BEFC1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05EB98852D151A7B008BEFC1 /* ShieldConfig.appex in Embed Foundation Extensions */,
+				05EB98A82D151EB9008BEFC1 /* ShieldAction.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05DA1D272D16B4B10014944F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldConfig.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EB987A2D151A7B008BEFC1 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		05EB987C2D151A7B008BEFC1 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		05FDE3672D0BDAED006A81FD /* Eat the Frog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eat the Frog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FDE3772D0BDAEE006A81FD /* Eat the FrogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eat the FrogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FDE3812D0BDAEE006A81FD /* Eat the FrogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eat the FrogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		05EB98892D151A7B008BEFC1 /* Exceptions for "ShieldConfig" folder in "ShieldConfig" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 05EB98772D151A7B008BEFC1 /* ShieldConfig */;
+		};
+		05EB98AC2D151EB9008BEFC1 /* Exceptions for "ShieldAction" folder in "ShieldAction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 05EB989E2D151EB9008BEFC1 /* ShieldAction */;
+		};
+		05EB98AF2D152446008BEFC1 /* Exceptions for "Eat the Frog" folder in "ShieldConfig" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 05EB98772D151A7B008BEFC1 /* ShieldConfig */;
+		};
+		05EB98B02D152446008BEFC1 /* Exceptions for "Eat the Frog" folder in "ShieldAction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 05EB989E2D151EB9008BEFC1 /* ShieldAction */;
+		};
+		05EB98B42D152B26008BEFC1 /* Exceptions for "ShieldConfig" folder in "ShieldAction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShieldConfigurationExtension.swift,
+			);
+			target = 05EB989E2D151EB9008BEFC1 /* ShieldAction */;
+		};
+		05EB98B62D152B2C008BEFC1 /* Exceptions for "ShieldAction" folder in "ShieldConfig" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ShieldActionExtension.swift,
+			);
+			target = 05EB98772D151A7B008BEFC1 /* ShieldConfig */;
+		};
+		05FDE3A62D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/ButtonAnimationModifier.swift,
+				Models/confetti.mp3,
+				Models/GIFPlayer.swift,
+				Models/ribbit.mp3,
+				Models/SettingsViewModel.swift,
+				Models/SoundPlayer.swift,
+				viewModels/AnimatedRainbowOutline.swift,
+				viewModels/AppPickerView.swift,
+				viewModels/BreathingExcerciseView.swift,
+				viewModels/DailyFrogInfo.swift,
+				viewModels/StreakInfoView.swift,
+				viewModels/TaskViewModel.swift,
+				Views/AboutView.swift,
+				Views/CompletedTaskCard.swift,
+				Views/SettingsView.swift,
+				Views/StreakBlockView.swift,
+				Views/TaskCompletionView.swift,
+				Views/TaskInputPage.swift,
+				Views/TaskInputView.swift,
+				Views/TimerBlockView.swift,
+			);
+			target = 05FDE3762D0BDAEE006A81FD /* Eat the FrogTests */;
+		};
+		05FDE3A72D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/ButtonAnimationModifier.swift,
+				Models/confetti.mp3,
+				Models/GIFPlayer.swift,
+				Models/ribbit.mp3,
+				Models/SettingsViewModel.swift,
+				Models/SoundPlayer.swift,
+				viewModels/AnimatedRainbowOutline.swift,
+				viewModels/AppPickerView.swift,
+				viewModels/BreathingExcerciseView.swift,
+				viewModels/DailyFrogInfo.swift,
+				viewModels/StreakInfoView.swift,
+				viewModels/TaskViewModel.swift,
+				Views/AboutView.swift,
+				Views/CompletedTaskCard.swift,
+				Views/SettingsView.swift,
+				Views/StreakBlockView.swift,
+				Views/TaskCompletionView.swift,
+				Views/TaskInputPage.swift,
+				Views/TaskInputView.swift,
+				Views/TimerBlockView.swift,
+			);
+			target = 05FDE3802D0BDAEE006A81FD /* Eat the FrogUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		05EB987E2D151A7B008BEFC1 /* ShieldConfig */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				05EB98892D151A7B008BEFC1 /* Exceptions for "ShieldConfig" folder in "ShieldConfig" target */,
+				05EB98B42D152B26008BEFC1 /* Exceptions for "ShieldConfig" folder in "ShieldAction" target */,
+			);
+			path = ShieldConfig;
+			sourceTree = "<group>";
+		};
+		05EB98A12D151EB9008BEFC1 /* ShieldAction */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				05EB98B62D152B2C008BEFC1 /* Exceptions for "ShieldAction" folder in "ShieldConfig" target */,
+				05EB98AC2D151EB9008BEFC1 /* Exceptions for "ShieldAction" folder in "ShieldAction" target */,
+			);
+			path = ShieldAction;
+			sourceTree = "<group>";
+		};
+		05FDE3692D0BDAED006A81FD /* Eat the Frog */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				05FDE3A62D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogTests" target */,
+				05FDE3A72D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogUITests" target */,
+				05EB98AF2D152446008BEFC1 /* Exceptions for "Eat the Frog" folder in "ShieldConfig" target */,
+				05EB98B02D152446008BEFC1 /* Exceptions for "Eat the Frog" folder in "ShieldAction" target */,
+			);
+			path = "Eat the Frog";
+			sourceTree = "<group>";
+		};
+		05FDE37A2D0BDAEE006A81FD /* Eat the FrogTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Eat the FrogTests";
+			sourceTree = "<group>";
+		};
+		05FDE3842D0BDAEE006A81FD /* Eat the FrogUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Eat the FrogUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05EB98752D151A7B008BEFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB987B2D151A7B008BEFC1 /* ManagedSettings.framework in Frameworks */,
+				05EB987D2D151A7B008BEFC1 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EB989C2D151EB9008BEFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB98A02D151EB9008BEFC1 /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE3642D0BDAED006A81FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DA1D2B2D16BA580014944F /* FirebaseAnalytics in Frameworks */,
+				05DA1D2F2D16BA580014944F /* FirebaseCrashlytics in Frameworks */,
+				05DA1D332D16BA580014944F /* FirebasePerformance in Frameworks */,
+				05DA1D2D2D16BA580014944F /* FirebaseAuth in Frameworks */,
+				05DA1D312D16BA580014944F /* FirebaseFirestore in Frameworks */,
+				05DA1D212D16907F0014944F /* ConfettiSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE3742D0BDAEE006A81FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE37E2D0BDAEE006A81FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05EB98792D151A7B008BEFC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05EB987A2D151A7B008BEFC1 /* ManagedSettings.framework */,
+				05EB987C2D151A7B008BEFC1 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05FDE35E2D0BDAED006A81FD = {
+			isa = PBXGroup;
+			children = (
+				05FDE3692D0BDAED006A81FD /* Eat the Frog */,
+				05FDE37A2D0BDAEE006A81FD /* Eat the FrogTests */,
+				05FDE3842D0BDAEE006A81FD /* Eat the FrogUITests */,
+				05EB987E2D151A7B008BEFC1 /* ShieldConfig */,
+				05EB98A12D151EB9008BEFC1 /* ShieldAction */,
+				05EB98792D151A7B008BEFC1 /* Frameworks */,
+				05FDE3682D0BDAED006A81FD /* Products */,
+				05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */,
+				05DA1D272D16B4B10014944F /* GoogleService-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		05FDE3682D0BDAED006A81FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05FDE3672D0BDAED006A81FD /* Eat the Frog.app */,
+				05FDE3772D0BDAEE006A81FD /* Eat the FrogTests.xctest */,
+				05FDE3812D0BDAEE006A81FD /* Eat the FrogUITests.xctest */,
+				05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */,
+				05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05EB98772D151A7B008BEFC1 /* ShieldConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EB98862D151A7B008BEFC1 /* Build configuration list for PBXNativeTarget "ShieldConfig" */;
+			buildPhases = (
+				05EB98742D151A7B008BEFC1 /* Sources */,
+				05EB98752D151A7B008BEFC1 /* Frameworks */,
+				05EB98762D151A7B008BEFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				05EB987E2D151A7B008BEFC1 /* ShieldConfig */,
+			);
+			name = ShieldConfig;
+			packageProductDependencies = (
+			);
+			productName = ShieldConfig;
+			productReference = 05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		05EB989E2D151EB9008BEFC1 /* ShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EB98A92D151EB9008BEFC1 /* Build configuration list for PBXNativeTarget "ShieldAction" */;
+			buildPhases = (
+				05EB989B2D151EB9008BEFC1 /* Sources */,
+				05EB989C2D151EB9008BEFC1 /* Frameworks */,
+				05EB989D2D151EB9008BEFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				05EB98A12D151EB9008BEFC1 /* ShieldAction */,
+			);
+			name = ShieldAction;
+			packageProductDependencies = (
+			);
+			productName = ShieldAction;
+			productReference = 05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		05FDE3662D0BDAED006A81FD /* Eat the Frog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FDE38B2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the Frog" */;
+			buildPhases = (
+				05FDE3632D0BDAED006A81FD /* Sources */,
+				05FDE3642D0BDAED006A81FD /* Frameworks */,
+				05FDE3652D0BDAED006A81FD /* Resources */,
+				05EB988A2D151A7B008BEFC1 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05EB98842D151A7B008BEFC1 /* PBXTargetDependency */,
+				05EB98A72D151EB9008BEFC1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				05FDE3692D0BDAED006A81FD /* Eat the Frog */,
+			);
+			name = "Eat the Frog";
+			packageProductDependencies = (
+				05DA1D202D16907F0014944F /* ConfettiSwiftUI */,
+				05DA1D2A2D16BA580014944F /* FirebaseAnalytics */,
+				05DA1D2C2D16BA580014944F /* FirebaseAuth */,
+				05DA1D2E2D16BA580014944F /* FirebaseCrashlytics */,
+				05DA1D302D16BA580014944F /* FirebaseFirestore */,
+				05DA1D322D16BA580014944F /* FirebasePerformance */,
+			);
+			productName = "Eat the Frog";
+			productReference = 05FDE3672D0BDAED006A81FD /* Eat the Frog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05FDE3762D0BDAEE006A81FD /* Eat the FrogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FDE38E2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogTests" */;
+			buildPhases = (
+				05FDE3732D0BDAEE006A81FD /* Sources */,
+				05FDE3742D0BDAEE006A81FD /* Frameworks */,
+				05FDE3752D0BDAEE006A81FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05FDE3792D0BDAEE006A81FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				05FDE37A2D0BDAEE006A81FD /* Eat the FrogTests */,
+			);
+			name = "Eat the FrogTests";
+			packageProductDependencies = (
+			);
+			productName = "Eat the FrogTests";
+			productReference = 05FDE3772D0BDAEE006A81FD /* Eat the FrogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05FDE3802D0BDAEE006A81FD /* Eat the FrogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FDE3912D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogUITests" */;
+			buildPhases = (
+				05FDE37D2D0BDAEE006A81FD /* Sources */,
+				05FDE37E2D0BDAEE006A81FD /* Frameworks */,
+				05FDE37F2D0BDAEE006A81FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05FDE3832D0BDAEE006A81FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				05FDE3842D0BDAEE006A81FD /* Eat the FrogUITests */,
+			);
+			name = "Eat the FrogUITests";
+			packageProductDependencies = (
+			);
+			productName = "Eat the FrogUITests";
+			productReference = 05FDE3812D0BDAEE006A81FD /* Eat the FrogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05FDE35F2D0BDAED006A81FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					05EB98772D151A7B008BEFC1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					05EB989E2D151EB9008BEFC1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					05FDE3662D0BDAED006A81FD = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					05FDE3762D0BDAEE006A81FD = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 05FDE3662D0BDAED006A81FD;
+					};
+					05FDE3802D0BDAEE006A81FD = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 05FDE3662D0BDAED006A81FD;
+					};
+				};
+			};
+			buildConfigurationList = 05FDE3622D0BDAED006A81FD /* Build configuration list for PBXProject "Eat the Frog" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05FDE35E2D0BDAED006A81FD;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				05DA1D1F2D1690300014944F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 05FDE3682D0BDAED006A81FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05FDE3662D0BDAED006A81FD /* Eat the Frog */,
+				05FDE3762D0BDAEE006A81FD /* Eat the FrogTests */,
+				05FDE3802D0BDAEE006A81FD /* Eat the FrogUITests */,
+				05EB98772D151A7B008BEFC1 /* ShieldConfig */,
+				05EB989E2D151EB9008BEFC1 /* ShieldAction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05EB98762D151A7B008BEFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB9A112D168E2D008BEFC1 /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EB989D2D151EB9008BEFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB9A122D168E2D008BEFC1 /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE3652D0BDAED006A81FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB999F2D168C4B008BEFC1 /* .swiftlint.yml in Resources */,
+				05DA1D282D16B4B10014944F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE3752D0BDAEE006A81FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB9A0F2D168E2D008BEFC1 /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE37F2D0BDAEE006A81FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EB9A102D168E2D008BEFC1 /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05EB98742D151A7B008BEFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EB989B2D151EB9008BEFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE3632D0BDAED006A81FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE3732D0BDAEE006A81FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FDE37D2D0BDAEE006A81FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05EB98842D151A7B008BEFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05EB98772D151A7B008BEFC1 /* ShieldConfig */;
+			targetProxy = 05EB98832D151A7B008BEFC1 /* PBXContainerItemProxy */;
+		};
+		05EB98A72D151EB9008BEFC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05EB989E2D151EB9008BEFC1 /* ShieldAction */;
+			targetProxy = 05EB98A62D151EB9008BEFC1 /* PBXContainerItemProxy */;
+		};
+		05FDE3792D0BDAEE006A81FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FDE3662D0BDAED006A81FD /* Eat the Frog */;
+			targetProxy = 05FDE3782D0BDAEE006A81FD /* PBXContainerItemProxy */;
+		};
+		05FDE3832D0BDAEE006A81FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FDE3662D0BDAED006A81FD /* Eat the Frog */;
+			targetProxy = 05FDE3822D0BDAEE006A81FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05EB98872D151A7B008BEFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldConfig/ShieldConfig.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldConfig/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfig;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-Frog.ShieldConfig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05EB98882D151A7B008BEFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldConfig/ShieldConfig.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldConfig/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfig;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-Frog.ShieldConfig";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05EB98AA2D151EB9008BEFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldAction/ShieldAction.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-Frog.ShieldAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05EB98AB2D151EB9008BEFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldAction/ShieldAction.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-Frog.ShieldAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05FDE3892D0BDAEE006A81FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05FDE38A2D0BDAEE006A81FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05FDE38C2D0BDAEE006A81FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Eat the Frog/Eat the Frog.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eat the Frog/Preview Content\"";
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eat-the-Frog-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-Frog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05FDE38D2D0BDAEE006A81FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Eat the Frog/Eat the Frog.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Eat the Frog/Preview Content\"";
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Eat-the-Frog-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-Frog";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05FDE38F2D0BDAEE006A81FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-FrogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eat the Frog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eat the Frog";
+			};
+			name = Debug;
+		};
+		05FDE3902D0BDAEE006A81FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-FrogTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eat the Frog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eat the Frog";
+			};
+			name = Release;
+		};
+		05FDE3922D0BDAEE006A81FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-FrogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eat the Frog";
+			};
+			name = Debug;
+		};
+		05FDE3932D0BDAEE006A81FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-FrogUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Eat the Frog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05EB98862D151A7B008BEFC1 /* Build configuration list for PBXNativeTarget "ShieldConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EB98872D151A7B008BEFC1 /* Debug */,
+				05EB98882D151A7B008BEFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05EB98A92D151EB9008BEFC1 /* Build configuration list for PBXNativeTarget "ShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EB98AA2D151EB9008BEFC1 /* Debug */,
+				05EB98AB2D151EB9008BEFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FDE3622D0BDAED006A81FD /* Build configuration list for PBXProject "Eat the Frog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FDE3892D0BDAEE006A81FD /* Debug */,
+				05FDE38A2D0BDAEE006A81FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FDE38B2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the Frog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FDE38C2D0BDAEE006A81FD /* Debug */,
+				05FDE38D2D0BDAEE006A81FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FDE38E2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FDE38F2D0BDAEE006A81FD /* Debug */,
+				05FDE3902D0BDAEE006A81FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FDE3912D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FDE3922D0BDAEE006A81FD /* Debug */,
+				05FDE3932D0BDAEE006A81FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05DA1D1F2D1690300014944F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05DA1D202D16907F0014944F /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DA1D1F2D1690300014944F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+		05DA1D2A2D16BA580014944F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		05DA1D2C2D16BA580014944F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		05DA1D2E2D16BA580014944F /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		05DA1D302D16BA580014944F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		05DA1D322D16BA580014944F /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 05FDE35F2D0BDAED006A81FD /* Project object */;
+}

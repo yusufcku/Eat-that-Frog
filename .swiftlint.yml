@@ -1,0 +1,25 @@
+# Disable specific rules
+disabled_rules:
+  - trailing_whitespace
+
+# Opt-in rules (enable these rules explicitly)
+opt_in_rules:
+  - file_name
+
+# Configure specific rules
+trailing_newline:
+  severity: warning
+
+file_name:
+  severity: warning
+  excluded:
+    - main.swift
+    - AppDelegate.swift
+
+# Paths to include or exclude from linting
+included:
+  - Eat the Frog
+excluded:
+  - Pods
+  - Carthage
+  - DerivedData
