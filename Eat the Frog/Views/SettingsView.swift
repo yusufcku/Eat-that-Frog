@@ -5,6 +5,7 @@ import ManagedSettings
 struct SettingsView: View {
     @State private var isInfoPresented = false
     @State private var isInfoPresented1 = false
+    @State private var isInfoPresented2 = false
     @EnvironmentObject private var viewModel: TaskViewModel
     @EnvironmentObject var settingsViewModel: SettingsViewModel
     @State private var isPressed = false
@@ -19,15 +20,9 @@ struct SettingsView: View {
         }
     }()
     
-    @State private var isDailyFrogRequired: Bool = {
-        let key = "isDailyFrogRequired"
-        if UserDefaults.standard.object(forKey: key) == nil {
-            UserDefaults.standard.set(false, forKey: key)
-            return true
-        } else {
-            return UserDefaults.standard.bool(forKey: key)
-        }
-    }()
+    @State private var isDailyFrogRequired: Bool = UserDefaults.standard.bool(forKey: "isDailyFrogRequired")
+
+
     
     var body: some View {
         NavigationView {
@@ -46,6 +41,7 @@ struct SettingsView: View {
                             // Toggle for Breathing Exercise
                             breathingExerciseToggle()
                             dailyFrogToggle()
+                            replayOnboardingBlock()
 
                             // Section for Customization
                             customizationCard()
@@ -80,6 +76,7 @@ struct SettingsView: View {
             }
         }
         .onAppear {
+            
             requestNotificationPermissions()
             if authorizationStatus != .approved {
                 authorizationStatus = AuthorizationCenter.shared.authorizationStatus
@@ -133,13 +130,13 @@ struct SettingsView: View {
 
                 VStack {
                     Text("Daily Frog Required")
-                        .font(.system(size: 22, weight: .bold, design: .monospaced))
+                        .font(.system(size: 24, weight: .bold, design: .monospaced))
                         .padding()
 
                     Text("""
     This setting ensures that you complete the most important task of the day (your Frog) before other distractions. If enabled, all selected apps will be blocked from the beggining of the day (even if you didn't set a Frog) until you mark a Frog task as complete.
     """)
-                        .font(.system(size: 16))
+                        .font(.system(size: 20))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.center)
                         .padding()
@@ -157,6 +154,7 @@ struct SettingsView: View {
                             .padding()
                             .background(Color("lime"))
                             .cornerRadius(12)
+                            .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
                     }
                     .padding()
                 }
@@ -199,13 +197,13 @@ struct SettingsView: View {
 
                 VStack {
                     Text("Breathing Exercises")
-                        .font(.system(size: 22, weight: .bold, design: .monospaced))
+                        .font(.system(size: 24, weight: .bold, design: .monospaced))
                         .padding()
 
                     Text("""
     This setting enables guided breathing exercises to help you stay mindful and true to your goals and self. When enabled, you will be prompted a short breathing excercise when trying to set a Frog as complete.
     """)
-                        .font(.system(size: 16))
+                        .font(.system(size: 20))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.center)
                         .padding()
@@ -214,7 +212,7 @@ struct SettingsView: View {
 
                     // Close Button
                     Button(action: {
-                        isInfoPresented = false
+                        isInfoPresented1 = false
                     }) {
                         Text("Close")
                             .font(.headline)
@@ -223,6 +221,7 @@ struct SettingsView: View {
                             .padding()
                             .background(Color("lime"))
                             .cornerRadius(12)
+                            .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
                     }
                     .padding()
                 }
@@ -279,6 +278,7 @@ struct SettingsView: View {
 
             Button(action: {
                 handleSelectApps()
+                triggerHapticFeedback()
             }) {
                 Text("Select Apps to Block")
                     .font(.headline)
@@ -297,6 +297,87 @@ struct SettingsView: View {
         .cornerRadius(12)
         .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
     }
+    
+    private func replayOnboarding() {
+        UserDefaults.standard.set(false, forKey: "hasCompletedOnboarding1")
+        print("Onboarding reset. Restart the app to view onboarding again.")
+    }
+
+    private func replayOnboardingBlock() -> some View {
+        VStack(alignment: .leading) {
+            HStack {
+                // Button to trigger replay onboarding
+                Button(action: {
+                    replayOnboarding()
+                    triggerHapticFeedback()
+                }) {
+                    Text("Replay Onboarding Survey")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color("lime"))
+                        .cornerRadius(12)
+                        .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
+                }
+
+                Spacer()
+
+                // Info Button
+                Button(action: {
+                    isInfoPresented2 = true // Show the info modal
+                }) {
+                    Image(systemName: "info.circle")
+                        .foregroundColor(.blue)
+                        .accessibilityLabel("What is Replay Onboarding?")
+                }
+                .padding(.leading, 8)
+            }
+            .padding()
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(12)
+        .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
+        .sheet(isPresented: $isInfoPresented2) { // Info Modal
+            ZStack {
+                Color.white.edgesIgnoringSafeArea(.all) // Background color
+
+                VStack {
+                    Text("Replay Onboarding")
+                        .font(.system(size: 24, weight: .bold, design: .monospaced))
+                        .padding()
+
+                    Text("""
+    This button allows you to replay the onboarding process and survey from the beginning of the app. Use it to reflect on your initial choices and see how far you've come! You must restart the app to activate it.
+    """)
+                        .font(.system(size: 20))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .padding()
+
+                    Spacer()
+
+                    // Close Button
+                    Button(action: {
+                        isInfoPresented2 = false
+                    }) {
+                        Text("Close")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color("lime"))
+                            .cornerRadius(12)
+                            .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
+                    }
+                    .padding()
+                }
+                .padding()
+            }
+        }
+    }
+
 
     func customizationCard() -> some View {
         VStack {
@@ -310,30 +391,9 @@ struct SettingsView: View {
                 .foregroundColor(.gray)
                 .padding()
 
-            Button(action: {
-                print("Reset all settings to default!")
-                triggerHapticFeedback()
-            }) {
-                Text("Reset to Default")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .frame(height: 45)
-                    .background(Color.red)
-                    .cornerRadius(30)
-                    .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
-                    .scaleEffect(isPressed ? 0.98 : 1.0)
-            }
-            .onChange(of: isPressed) { oldValue, newValue in
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                    withAnimation(.spring(response: 0.4, dampingFraction: 0.6, blendDuration: 0)) {
-                        isPressed = false
-                    }
-                }
-            }
         }
         .padding()
+        .frame(maxWidth: .infinity)
         .background(Color.white)
         .cornerRadius(12)
         .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
@@ -360,17 +420,20 @@ struct SettingsView: View {
         }
     
     private func handleDailyFrogToggleChange(newValue: Bool) {
-         if newValue {
-             // Turned ON: If user hasn’t done the frog today, block immediately
-             if !viewModel.hasCompletedFrogToday {
-                 viewModel.blockApps()
-             }
-         } else {
-             // Turned OFF: Unblock apps
-             viewModel.unblockApps()
-         }
-     }
-    
+        if newValue {
+            // Turned ON: Block apps immediately if the frog hasn't been completed
+            if !viewModel.hasCompletedFrogToday {
+                viewModel.blockApps()
+            }
+        } else {
+            // Turned OFF: Unblock apps only if no task is currently ongoing
+            if !viewModel.isTaskStarted {
+                viewModel.unblockApps()
+            } else {
+                print("Cannot unblock apps because a task is currently ongoing.")
+            }
+        }
+    }
     private func requestAuthorization() {
         Task {
             do {

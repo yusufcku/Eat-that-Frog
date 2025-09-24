@@ -14,46 +14,51 @@ struct AboutView: View {
                         ZStack {
                             // Dashed Line Background
                             dashedLineBackground()
-                                .padding(.top, 100)
+                                .padding(.top, 90)
                             
                             VStack(spacing: 30) {
                                 aboutBlock(
                                     title: "The Mission",
                                     content: """
-                                    Eat the Frog is designed to help you focus on your most important task by eliminating distractions and motivating you. Take control of your day!
+                                    Eat that Frog is designed to help you focus on your most important task by eliminating distractions and motivating you. Take control of your day!
                                     
                                     "If it's your job to eat a frog, it's best to do it first thing in the morning. And if it's your job to eat two frogs, it's best to eat the biggest one first." - Mark Twain
                                     """,
-                                    icon:"checkmark.seal.fill"
-                                    
-                                    
+                                    icon: "checkmark.seal.fill"
                                 )
-                                .padding(.top, -142)
-                                
+                                .padding(.top, -157)
+
                                 aboutBlock(
                                     title: "Our Story",
                                     content: """
-                                    Seeing my own and others addiction to their phones, during highschool I built 'Eat the Frog' to help myself and others focus on what truly matters in their lives.
+                                    Seeing my own and others addiction to their phones, during high school I built 'Eat that Frog' to help myself and others focus on what truly matters in their lives.
+                                    
                                     
                                     """,
-                                    icon:"book.fill"
-                                    
-                                    
+                                    icon: "book.fill"
                                 )
-                                
+
                                 aboutBlock(
-                                    title: "Core Features",
+                                    title: "Visit Our Website",
                                     content: """
-                                    - Set key daily tasks
-                                    - Block distracting apps
-                                    - Track streaks for consistent progress
-                                    - Customize your own settings
-                                    
+                                    Learn more about us and our future!
+                                    """,
+                                    icon: "link.circle.fill",
+                                    action: {
+                                        if let url = URL(string: "https://eatthatfrog.carrd.co/#") {
+                                            UIApplication.shared.open(url)
+                                        }
+                                    }
+                                )
+
+                                aboutBlock(
+                                    title: "Next Update",
+                                    content: """
+                                    1: Dark mode compatibility and new fun modes! 2: Frog UI changes. 3: History tab to track and plan your tasks.
                                     """,
                                     icon: "list.bullet.rectangle.fill"
                                 )
-                                
-                                
+
                                 aboutBlock(
                                     title: "Feedback & Support",
                                     content: """
@@ -61,14 +66,7 @@ struct AboutView: View {
                                     """,
                                     icon: "bubble.left.and.bubble.right.fill"
                                 )
-                                
-                                aboutBlock(
-                                    title: "Much More Coming Soon",
-                                    content: """
-                                    There is so much more to come—this is a community, and together, we can grow and achieve great things!
-                                    """,
-                                    icon: "globe"
-                                )
+
                                 
                                 Button(action: {
                                     requestAppStoreReview()
@@ -131,7 +129,7 @@ struct AboutView: View {
     
     // MARK: - About Block
     @ViewBuilder
-    private func aboutBlock(title: String, content: String, icon: String) -> some View {
+    private func aboutBlock(title: String, content: String, icon: String, action: (() -> Void)? = nil) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
                 Image(systemName: icon)
@@ -145,6 +143,19 @@ struct AboutView: View {
             Text(content)
                 .font(.body)
                 .multilineTextAlignment(.leading)
+            
+            if let action = action {
+                Button(action: action) {
+                    Text("Visit Now")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color("lime"))
+                        .cornerRadius(10)
+                }
+                .padding(.top, 10)
+            }
         }
         .padding()
         .frame(maxWidth: .infinity)
@@ -152,11 +163,12 @@ struct AboutView: View {
         .cornerRadius(12)
         .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
     }
+    
     private func requestAppStoreReview() {
-           if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-               AppStore.requestReview(in: windowScene)
-           }
-       }
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            AppStore.requestReview(in: windowScene)
+        }
+    }
     
     // MARK: - Dashed Line Background
     @ViewBuilder

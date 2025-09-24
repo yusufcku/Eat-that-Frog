@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1600"
+   LastUpgradeVersion = "2600"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05FDE3662D0BDAED006A81FD"
-               BuildableName = "Eat the Frog.app"
-               BlueprintName = "Eat the Frog"
-               ReferencedContainer = "container:Eat the Frog.xcodeproj">
+               BuildableName = "Eat that Frog.app"
+               BlueprintName = "Eat that Frog"
+               ReferencedContainer = "container:Eat that Frog.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05FDE3762D0BDAEE006A81FD"
-               BuildableName = "Eat the FrogTests.xctest"
-               BlueprintName = "Eat the FrogTests"
-               ReferencedContainer = "container:Eat the Frog.xcodeproj">
+               BuildableName = "Eat that FrogTests.xctest"
+               BlueprintName = "Eat that FrogTests"
+               ReferencedContainer = "container:Eat that Frog.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05FDE3802D0BDAEE006A81FD"
-               BuildableName = "Eat the FrogUITests.xctest"
-               BlueprintName = "Eat the FrogUITests"
-               ReferencedContainer = "container:Eat the Frog.xcodeproj">
+               BuildableName = "Eat that FrogUITests.xctest"
+               BlueprintName = "Eat that FrogUITests"
+               ReferencedContainer = "container:Eat that Frog.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05FDE3662D0BDAED006A81FD"
-            BuildableName = "Eat the Frog.app"
-            BlueprintName = "Eat the Frog"
-            ReferencedContainer = "container:Eat the Frog.xcodeproj">
+            BuildableName = "Eat that Frog.app"
+            BlueprintName = "Eat that Frog"
+            ReferencedContainer = "container:Eat that Frog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05FDE3662D0BDAED006A81FD"
-            BuildableName = "Eat the Frog.app"
-            BlueprintName = "Eat the Frog"
-            ReferencedContainer = "container:Eat the Frog.xcodeproj">
+            BuildableName = "Eat that Frog.app"
+            BlueprintName = "Eat that Frog"
+            ReferencedContainer = "container:Eat that Frog.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

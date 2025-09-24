@@ -24,6 +24,7 @@ import SwiftUI
                     Image("frog")
                         .resizable()
                         .scaledToFit()
+                        .offset(x: 2) 
                         .frame(width: 100, height: 100)
                 }
                 .frame(width: 150, height: 150)

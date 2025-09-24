@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05DA1D212D16907F0014944F /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D202D16907F0014944F /* ConfettiSwiftUI */; };
-		05DA1D282D16B4B10014944F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05DA1D272D16B4B10014944F /* GoogleService-Info.plist */; };
-		05DA1D2B2D16BA580014944F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D2A2D16BA580014944F /* FirebaseAnalytics */; };
-		05DA1D2D2D16BA580014944F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D2C2D16BA580014944F /* FirebaseAuth */; };
-		05DA1D2F2D16BA580014944F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D2E2D16BA580014944F /* FirebaseCrashlytics */; };
-		05DA1D312D16BA580014944F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D302D16BA580014944F /* FirebaseFirestore */; };
-		05DA1D332D16BA580014944F /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 05DA1D322D16BA580014944F /* FirebasePerformance */; };
 		05EB987B2D151A7B008BEFC1 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB987A2D151A7B008BEFC1 /* ManagedSettings.framework */; };
 		05EB987D2D151A7B008BEFC1 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB987C2D151A7B008BEFC1 /* ManagedSettingsUI.framework */; };
 		05EB98852D151A7B008BEFC1 /* ShieldConfig.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -73,15 +67,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		05DA1D272D16B4B10014944F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldConfig.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EB987A2D151A7B008BEFC1 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
 		05EB987C2D151A7B008BEFC1 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
 		05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
-		05FDE3672D0BDAED006A81FD /* Eat the Frog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eat the Frog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05FDE3772D0BDAEE006A81FD /* Eat the FrogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eat the FrogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05FDE3812D0BDAEE006A81FD /* Eat the FrogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eat the FrogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FDE3672D0BDAED006A81FD /* Eat that Frog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eat that Frog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FDE3772D0BDAEE006A81FD /* Eat that FrogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eat that FrogTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FDE3812D0BDAEE006A81FD /* Eat that FrogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eat that FrogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -127,57 +120,96 @@
 			);
 			target = 05EB98772D151A7B008BEFC1 /* ShieldConfig */;
 		};
-		05FDE3A62D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogTests" target */ = {
+		05F3488C2D2744BF00784910 /* Exceptions for "Eat the Frog" folder in "Eat that Frog" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Models/ButtonAnimationModifier.swift,
-				Models/confetti.mp3,
-				Models/GIFPlayer.swift,
-				Models/ribbit.mp3,
-				Models/SettingsViewModel.swift,
-				Models/SoundPlayer.swift,
-				viewModels/AnimatedRainbowOutline.swift,
-				viewModels/AppPickerView.swift,
-				viewModels/BreathingExcerciseView.swift,
-				viewModels/DailyFrogInfo.swift,
-				viewModels/StreakInfoView.swift,
-				viewModels/TaskViewModel.swift,
-				Views/AboutView.swift,
-				Views/CompletedTaskCard.swift,
-				Views/SettingsView.swift,
-				Views/StreakBlockView.swift,
-				Views/TaskCompletionView.swift,
-				Views/TaskInputPage.swift,
 				Views/TaskInputView.swift,
-				Views/TimerBlockView.swift,
 			);
-			target = 05FDE3762D0BDAEE006A81FD /* Eat the FrogTests */;
+			target = 05FDE3662D0BDAED006A81FD /* Eat that Frog */;
 		};
-		05FDE3A72D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogUITests" target */ = {
+		05FDE3A62D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat that FrogTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Models/AnalysisView.swift,
 				Models/ButtonAnimationModifier.swift,
 				Models/confetti.mp3,
+				Models/FinalPageView.swift,
 				Models/GIFPlayer.swift,
+				"Models/LeagueSpartan-VF.ttf",
+				Models/MonthlyStreakView.swift,
+				Models/NotificationPermissionView.swift,
+				Models/PaywallView.swift,
+				"Models/QanelasSoftDEMO-ExtraBold.otf",
+				"Models/QanelasSoftDEMO-UltraLight.otf",
 				Models/ribbit.mp3,
 				Models/SettingsViewModel.swift,
 				Models/SoundPlayer.swift,
+				Models/SyncScreenView.swift,
 				viewModels/AnimatedRainbowOutline.swift,
 				viewModels/AppPickerView.swift,
 				viewModels/BreathingExcerciseView.swift,
 				viewModels/DailyFrogInfo.swift,
+				viewModels/FinalOnboardingView.swift,
+				viewModels/OnboardingPageView.swift,
+				viewModels/OnboardingView1.swift,
 				viewModels/StreakInfoView.swift,
+				viewModels/SurveyWelcomeView.swift,
 				viewModels/TaskViewModel.swift,
+				viewModels/WelcomeView.swift,
 				Views/AboutView.swift,
 				Views/CompletedTaskCard.swift,
+				Views/OnboardingPage.swift,
 				Views/SettingsView.swift,
 				Views/StreakBlockView.swift,
+				Views/SurveyView.swift,
 				Views/TaskCompletionView.swift,
 				Views/TaskInputPage.swift,
-				Views/TaskInputView.swift,
+				Views/TaskInputView1.swift,
 				Views/TimerBlockView.swift,
 			);
-			target = 05FDE3802D0BDAEE006A81FD /* Eat the FrogUITests */;
+			target = 05FDE3762D0BDAEE006A81FD /* Eat that FrogTests */;
+		};
+		05FDE3A72D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat that FrogUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/AnalysisView.swift,
+				Models/ButtonAnimationModifier.swift,
+				Models/confetti.mp3,
+				Models/FinalPageView.swift,
+				Models/GIFPlayer.swift,
+				"Models/LeagueSpartan-VF.ttf",
+				Models/MonthlyStreakView.swift,
+				Models/NotificationPermissionView.swift,
+				Models/PaywallView.swift,
+				"Models/QanelasSoftDEMO-ExtraBold.otf",
+				"Models/QanelasSoftDEMO-UltraLight.otf",
+				Models/ribbit.mp3,
+				Models/SettingsViewModel.swift,
+				Models/SoundPlayer.swift,
+				Models/SyncScreenView.swift,
+				viewModels/AnimatedRainbowOutline.swift,
+				viewModels/AppPickerView.swift,
+				viewModels/BreathingExcerciseView.swift,
+				viewModels/DailyFrogInfo.swift,
+				viewModels/FinalOnboardingView.swift,
+				viewModels/OnboardingPageView.swift,
+				viewModels/OnboardingView1.swift,
+				viewModels/StreakInfoView.swift,
+				viewModels/SurveyWelcomeView.swift,
+				viewModels/TaskViewModel.swift,
+				viewModels/WelcomeView.swift,
+				Views/AboutView.swift,
+				Views/CompletedTaskCard.swift,
+				Views/OnboardingPage.swift,
+				Views/SettingsView.swift,
+				Views/StreakBlockView.swift,
+				Views/SurveyView.swift,
+				Views/TaskCompletionView.swift,
+				Views/TaskInputPage.swift,
+				Views/TaskInputView1.swift,
+				Views/TimerBlockView.swift,
+			);
+			target = 05FDE3802D0BDAEE006A81FD /* Eat that FrogUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -203,8 +235,9 @@
 		05FDE3692D0BDAED006A81FD /* Eat the Frog */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				05FDE3A62D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogTests" target */,
-				05FDE3A72D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat the FrogUITests" target */,
+				05F3488C2D2744BF00784910 /* Exceptions for "Eat the Frog" folder in "Eat that Frog" target */,
+				05FDE3A62D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat that FrogTests" target */,
+				05FDE3A72D0BDE2D006A81FD /* Exceptions for "Eat the Frog" folder in "Eat that FrogUITests" target */,
 				05EB98AF2D152446008BEFC1 /* Exceptions for "Eat the Frog" folder in "ShieldConfig" target */,
 				05EB98B02D152446008BEFC1 /* Exceptions for "Eat the Frog" folder in "ShieldAction" target */,
 			);
@@ -245,11 +278,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DA1D2B2D16BA580014944F /* FirebaseAnalytics in Frameworks */,
-				05DA1D2F2D16BA580014944F /* FirebaseCrashlytics in Frameworks */,
-				05DA1D332D16BA580014944F /* FirebasePerformance in Frameworks */,
-				05DA1D2D2D16BA580014944F /* FirebaseAuth in Frameworks */,
-				05DA1D312D16BA580014944F /* FirebaseFirestore in Frameworks */,
 				05DA1D212D16907F0014944F /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,16 +319,15 @@
 				05EB98792D151A7B008BEFC1 /* Frameworks */,
 				05FDE3682D0BDAED006A81FD /* Products */,
 				05EB999E2D168BF2008BEFC1 /* .swiftlint.yml */,
-				05DA1D272D16B4B10014944F /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		05FDE3682D0BDAED006A81FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05FDE3672D0BDAED006A81FD /* Eat the Frog.app */,
-				05FDE3772D0BDAEE006A81FD /* Eat the FrogTests.xctest */,
-				05FDE3812D0BDAEE006A81FD /* Eat the FrogUITests.xctest */,
+				05FDE3672D0BDAED006A81FD /* Eat that Frog.app */,
+				05FDE3772D0BDAEE006A81FD /* Eat that FrogTests.xctest */,
+				05FDE3812D0BDAEE006A81FD /* Eat that FrogUITests.xctest */,
 				05EB98782D151A7B008BEFC1 /* ShieldConfig.appex */,
 				05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */,
 			);
@@ -354,9 +381,9 @@
 			productReference = 05EB989F2D151EB9008BEFC1 /* ShieldAction.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		05FDE3662D0BDAED006A81FD /* Eat the Frog */ = {
+		05FDE3662D0BDAED006A81FD /* Eat that Frog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05FDE38B2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the Frog" */;
+			buildConfigurationList = 05FDE38B2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat that Frog" */;
 			buildPhases = (
 				05FDE3632D0BDAED006A81FD /* Sources */,
 				05FDE3642D0BDAED006A81FD /* Frameworks */,
@@ -372,22 +399,17 @@
 			fileSystemSynchronizedGroups = (
 				05FDE3692D0BDAED006A81FD /* Eat the Frog */,
 			);
-			name = "Eat the Frog";
+			name = "Eat that Frog";
 			packageProductDependencies = (
 				05DA1D202D16907F0014944F /* ConfettiSwiftUI */,
-				05DA1D2A2D16BA580014944F /* FirebaseAnalytics */,
-				05DA1D2C2D16BA580014944F /* FirebaseAuth */,
-				05DA1D2E2D16BA580014944F /* FirebaseCrashlytics */,
-				05DA1D302D16BA580014944F /* FirebaseFirestore */,
-				05DA1D322D16BA580014944F /* FirebasePerformance */,
 			);
 			productName = "Eat the Frog";
-			productReference = 05FDE3672D0BDAED006A81FD /* Eat the Frog.app */;
+			productReference = 05FDE3672D0BDAED006A81FD /* Eat that Frog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		05FDE3762D0BDAEE006A81FD /* Eat the FrogTests */ = {
+		05FDE3762D0BDAEE006A81FD /* Eat that FrogTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05FDE38E2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogTests" */;
+			buildConfigurationList = 05FDE38E2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat that FrogTests" */;
 			buildPhases = (
 				05FDE3732D0BDAEE006A81FD /* Sources */,
 				05FDE3742D0BDAEE006A81FD /* Frameworks */,
@@ -401,16 +423,16 @@
 			fileSystemSynchronizedGroups = (
 				05FDE37A2D0BDAEE006A81FD /* Eat the FrogTests */,
 			);
-			name = "Eat the FrogTests";
+			name = "Eat that FrogTests";
 			packageProductDependencies = (
 			);
 			productName = "Eat the FrogTests";
-			productReference = 05FDE3772D0BDAEE006A81FD /* Eat the FrogTests.xctest */;
+			productReference = 05FDE3772D0BDAEE006A81FD /* Eat that FrogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		05FDE3802D0BDAEE006A81FD /* Eat the FrogUITests */ = {
+		05FDE3802D0BDAEE006A81FD /* Eat that FrogUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05FDE3912D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogUITests" */;
+			buildConfigurationList = 05FDE3912D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat that FrogUITests" */;
 			buildPhases = (
 				05FDE37D2D0BDAEE006A81FD /* Sources */,
 				05FDE37E2D0BDAEE006A81FD /* Frameworks */,
@@ -424,11 +446,11 @@
 			fileSystemSynchronizedGroups = (
 				05FDE3842D0BDAEE006A81FD /* Eat the FrogUITests */,
 			);
-			name = "Eat the FrogUITests";
+			name = "Eat that FrogUITests";
 			packageProductDependencies = (
 			);
 			productName = "Eat the FrogUITests";
-			productReference = 05FDE3812D0BDAEE006A81FD /* Eat the FrogUITests.xctest */;
+			productReference = 05FDE3812D0BDAEE006A81FD /* Eat that FrogUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -439,7 +461,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					05EB98772D151A7B008BEFC1 = {
 						CreatedOnToolsVersion = 16.0;
@@ -460,7 +482,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05FDE3622D0BDAED006A81FD /* Build configuration list for PBXProject "Eat the Frog" */;
+			buildConfigurationList = 05FDE3622D0BDAED006A81FD /* Build configuration list for PBXProject "Eat that Frog" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -471,16 +493,15 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				05DA1D1F2D1690300014944F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
-				05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 05FDE3682D0BDAED006A81FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05FDE3662D0BDAED006A81FD /* Eat the Frog */,
-				05FDE3762D0BDAEE006A81FD /* Eat the FrogTests */,
-				05FDE3802D0BDAEE006A81FD /* Eat the FrogUITests */,
+				05FDE3662D0BDAED006A81FD /* Eat that Frog */,
+				05FDE3762D0BDAEE006A81FD /* Eat that FrogTests */,
+				05FDE3802D0BDAEE006A81FD /* Eat that FrogUITests */,
 				05EB98772D151A7B008BEFC1 /* ShieldConfig */,
 				05EB989E2D151EB9008BEFC1 /* ShieldAction */,
 			);
@@ -509,7 +530,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05EB999F2D168C4B008BEFC1 /* .swiftlint.yml in Resources */,
-				05DA1D282D16B4B10014944F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,12 +602,12 @@
 		};
 		05FDE3792D0BDAEE006A81FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05FDE3662D0BDAED006A81FD /* Eat the Frog */;
+			target = 05FDE3662D0BDAED006A81FD /* Eat that Frog */;
 			targetProxy = 05FDE3782D0BDAEE006A81FD /* PBXContainerItemProxy */;
 		};
 		05FDE3832D0BDAEE006A81FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05FDE3662D0BDAED006A81FD /* Eat the Frog */;
+			target = 05FDE3662D0BDAED006A81FD /* Eat that Frog */;
 			targetProxy = 05FDE3822D0BDAEE006A81FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -600,7 +620,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldConfig/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfig;
@@ -627,7 +646,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldConfig/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfig;
@@ -654,7 +672,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldAction/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
@@ -681,7 +698,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldAction/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
@@ -736,6 +752,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -759,6 +776,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -799,6 +817,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -815,6 +834,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -830,7 +850,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eat the Frog/Preview Content\"";
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -864,7 +883,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Eat the Frog/Preview Content\"";
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -894,7 +912,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -903,7 +920,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eat the Frog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eat the Frog";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eat that Frog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eat that Frog";
 			};
 			name = Debug;
 		};
@@ -913,7 +930,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
@@ -922,7 +938,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eat the Frog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eat the Frog";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eat that Frog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Eat that Frog";
 			};
 			name = Release;
 		};
@@ -931,7 +947,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-FrogUITests";
@@ -948,7 +963,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6NGRM3X22R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yusufckuru.Eat-the-FrogUITests";
@@ -981,7 +995,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05FDE3622D0BDAED006A81FD /* Build configuration list for PBXProject "Eat the Frog" */ = {
+		05FDE3622D0BDAED006A81FD /* Build configuration list for PBXProject "Eat that Frog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05FDE3892D0BDAEE006A81FD /* Debug */,
@@ -990,7 +1004,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05FDE38B2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the Frog" */ = {
+		05FDE38B2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat that Frog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05FDE38C2D0BDAEE006A81FD /* Debug */,
@@ -999,7 +1013,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05FDE38E2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogTests" */ = {
+		05FDE38E2D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat that FrogTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05FDE38F2D0BDAEE006A81FD /* Debug */,
@@ -1008,7 +1022,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05FDE3912D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat the FrogUITests" */ = {
+		05FDE3912D0BDAEE006A81FD /* Build configuration list for PBXNativeTarget "Eat that FrogUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05FDE3922D0BDAEE006A81FD /* Debug */,
@@ -1028,14 +1042,6 @@
 				minimumVersion = 1.1.0;
 			};
 		};
-		05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.6.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1043,31 +1049,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 05DA1D1F2D1690300014944F /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
 			productName = ConfettiSwiftUI;
-		};
-		05DA1D2A2D16BA580014944F /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		05DA1D2C2D16BA580014944F /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		05DA1D2E2D16BA580014944F /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		05DA1D302D16BA580014944F /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		05DA1D322D16BA580014944F /* FirebasePerformance */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 05DA1D292D16BA580014944F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebasePerformance;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

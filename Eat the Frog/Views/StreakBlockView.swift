@@ -6,7 +6,7 @@ struct StreakBlockView: View {
 
     private func flameColor() -> AnyView {
         if viewModel.streakCount >= 15 {
-            // Rainbow flame using AngularGradient
+            // Rainbow flame using LinearGradient
             return AnyView(
                 LinearGradient(
                     gradient: Gradient(colors: [.red, .orange, .yellow, .green, .blue, .purple]),
@@ -51,130 +51,98 @@ struct StreakBlockView: View {
     }
 
     var body: some View {
-        ZStack(alignment: .topTrailing) { // Use ZStack to overlay the info button
-            VStack(spacing: 10) {
-                HStack {
-                    flameColor()
-    
+        ZStack(alignment: .topTrailing) {
+            HStack(spacing: 0) {
+                flameColor()
+                    .padding(.leading, 30)
 
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text(" Keep Your Streak Alive!")
-                            .font(.headline)
-                            .foregroundColor(.black)
+                Spacer()
 
-                        if viewModel.streakCount > 1 {
-                            Text("🎉 You're on a \(viewModel.streakCount)-day streak!")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        } else if viewModel.streakCount == 1 {
-                            Text("🔥 Great start!")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        } else {
-                            Text("✨ Get your streak started!")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                    }
-
-                    Spacer()
-
-                    // Info button in the top-right corner
-                    Button(action: {
-                        isInfoPresented.toggle()
-                    }) {
-                        Image(systemName: "info.circle")
-                            .resizable()
-                            .frame(width: 20, height: 20)
-                            .foregroundColor(Color.blue.opacity(0.6))
-                      
-            
-                    }
+                VStack(spacing: 5) {
+                    Text("\(viewModel.streakCount)")
+                        .font(.system(size: 36, weight: .bold, design: .rounded))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [Color("earth"), Color("lime")],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .animation(.easeInOut(duration: 0.3))
+                    Text("Day Streak")
+                        .font(.system(size: 14, weight: .regular, design: .monospaced))
+                        .foregroundColor(.secondary)
                 }
-                .padding(.bottom, -5)
-                .padding()
 
-                Divider()
+                Spacer()
 
-                HStack {
-                    VStack(spacing: 5) {
-                        Text("\(viewModel.streakCount)")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("lime"))
-                            .animation(.easeInOut(duration: 0.3))
-                        Text("Day Streak")
-                            .font(.system(size: 15, weight: .regular, design: .monospaced))
-                            .foregroundColor(.gray)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .center)
-
-                    VStack(spacing: 5) {
-                        Text("\(viewModel.taskCompletionHistory.count)")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("lime"))
-                        Text("Frogs Eaten")
-                            .font(.system(size: 15, weight: .regular, design: .monospaced))
-                            .foregroundColor(.gray)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .center)
+                VStack(spacing: 5) {
+                    Text("\(viewModel.taskCompletionHistory.count)")
+                        .font(.system(size: 36, weight: .bold, design: .rounded))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [Color("earth"), Color("lime")],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                    Text("Frogs Eaten")
+                        .font(.system(size: 14, weight: .regular, design: .monospaced))
+                        .foregroundColor(.secondary)
                 }
-                .padding(.top, -13)
-                .padding()
+                .padding(.trailing, 65)
             }
-            .frame(maxWidth: .infinity) // Ensure it stretches to fill the horizontal space
-                   .padding(.horizontal)      // Add consistent horizontal padding
-                   .background(Color.white)   // Match the background color
-                   .cornerRadius(12)          // Match the corner radius of other blocks
-                   .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2) // Add shadow
+            
+            Button(action: {
+                isInfoPresented.toggle()
+            }) {
+                Image(systemName: "info.circle")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.blue.opacity(0.6))
+            }
+            .padding([.top, .trailing], 10)
         }
-        .fullScreenCover(isPresented: $isInfoPresented) { // Full-screen modal
+        .padding(.vertical, 10)
+        .background(Color("ghost"))
+        .cornerRadius(12)
+        .sheet(isPresented: $isInfoPresented) {
             ZStack {
-                Color.white.edgesIgnoringSafeArea(.all) // Background color
+                Color("ghost").edgesIgnoringSafeArea(.all)
 
                 VStack {
-                    Spacer() // Push content and button down
-
                     HStack {
                         Spacer()
-
-                        // Close button
                         Button(action: {
                             isInfoPresented = false
                         }) {
                             Image(systemName: "xmark.circle.fill")
                                 .resizable()
                                 .frame(width: 30, height: 30)
-                                .foregroundColor(.gray)
+                                .foregroundColor(.secondary)
                                 .padding()
                         }
-                        .padding(.bottom, -30) // Adjust button's position from the bottom
                     }
 
-                    Spacer()
+                    StreakInfoView()
 
-                    StreakInfoView() // Use your existing StreakInfoView
-                        .padding()
+                    Spacer()
                 }
             }
         }
-
     }
 }
 
 struct StreakBlockView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            // Test for streak < 5 (Orange Flame)
             StreakBlockView(viewModel: {
                 let viewModel = TaskViewModel()
                 viewModel.streakCount = 1
                 return viewModel
             }())
-            .previewDisplayName("Streak: 3 (Orange Flame)")
+            .previewDisplayName("Streak: 1 (Orange Flame)")
 
-            // Test for streak >= 5 (Red Flame)
             StreakBlockView(viewModel: {
                 let viewModel = TaskViewModel()
                 viewModel.streakCount = 5
@@ -182,7 +150,6 @@ struct StreakBlockView_Previews: PreviewProvider {
             }())
             .previewDisplayName("Streak: 5 (Red Flame)")
 
-            // Test for streak >= 10 (Purple Flame)
             StreakBlockView(viewModel: {
                 let viewModel = TaskViewModel()
                 viewModel.streakCount = 10
@@ -190,7 +157,6 @@ struct StreakBlockView_Previews: PreviewProvider {
             }())
             .previewDisplayName("Streak: 10 (Purple Flame)")
 
-            // Test for streak >= 15 (Rainbow Flame)
             StreakBlockView(viewModel: {
                 let viewModel = TaskViewModel()
                 viewModel.streakCount = 15
@@ -198,5 +164,8 @@ struct StreakBlockView_Previews: PreviewProvider {
             }())
             .previewDisplayName("Streak: 15 (Rainbow Flame)")
         }
+        .background(Color("ghost"))
+        .previewLayout(.sizeThatFits)
     }
 }
+

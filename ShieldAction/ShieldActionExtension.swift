@@ -13,7 +13,7 @@ class ShieldActionExtension: ShieldActionDelegate {
         switch action {
         case .primaryButtonPressed:
 
-                sendNotification(title: "Focus Time!", message: "Remember to eat your frog and stay productive!")
+                sendNotification(title: "Focus Time 🐸!", message: "You got this! Remember to eat your frog and stay productive!")
                 completionHandler(.defer)
             
           

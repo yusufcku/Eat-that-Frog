@@ -53,7 +53,7 @@ struct TaskInputView: View {
                             Text("Eat")
                                 .font(.system(size: 22, weight: .regular, design: .monospaced))
                                 .foregroundColor(.white)
-                            Text("the")
+                            Text("that")
                                 .font(.system(size: 22, weight: .regular, design: .monospaced))
                                 .foregroundColor(.white)
                                 .padding(.leading, -1)
