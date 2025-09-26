@@ -214,6 +214,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		0537CE752E864C1A00AD377F /* assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = assets;
+			sourceTree = "<group>";
+		};
 		05EB987E2D151A7B008BEFC1 /* ShieldConfig */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -311,6 +316,7 @@
 		05FDE35E2D0BDAED006A81FD = {
 			isa = PBXGroup;
 			children = (
+				0537CE752E864C1A00AD377F /* assets */,
 				05FDE3692D0BDAED006A81FD /* Eat the Frog */,
 				05FDE37A2D0BDAEE006A81FD /* Eat the FrogTests */,
 				05FDE3842D0BDAEE006A81FD /* Eat the FrogUITests */,
@@ -397,6 +403,7 @@
 				05EB98A72D151EB9008BEFC1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
+				0537CE752E864C1A00AD377F /* assets */,
 				05FDE3692D0BDAED006A81FD /* Eat the Frog */,
 			);
 			name = "Eat that Frog";
