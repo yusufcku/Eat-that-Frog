@@ -5,7 +5,7 @@
 After seeing my screen time hit 8+ hours a day, I built **Eat That Frog** as a fun and effective way to break stop doomscrolling.  
 Inspired by Brian Tracy’s **Eat That Frog** method, the app helps users tackle their most important task first, while blending **behavioral design, habit-building, and playful micro-interactions**.
 
----
+--- 
 
 ## 🚀 Onboarding
 
