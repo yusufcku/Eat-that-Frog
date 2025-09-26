@@ -16,7 +16,7 @@ Inspired by Brian Tracy’s **Eat That Frog** method, the app helps users tackle
 - Onboarding designed as more than just a tutorial, it’s an **emotional hook** that motivates users from the get go.
 - **Dynamic paywall testing** powered by $uperwall API to identify the highest-performing paywall strategy (not fully complete).
 
-![Onboarding Demo](assets/onboarding.gif)
+![Onboarding Demo](assets/onboarding1.gif)
   
 ---
 
@@ -31,7 +31,7 @@ Inspired by Brian Tracy’s **Eat That Frog** method, the app helps users tackle
 - **Different difficulty modes and Screen Time plans** for users to choose from.  
 - **Fun effects, sounds, and interactive elements** throughout the experience.  
 
-![App Demo](assets/appdemo.gif)
+![App Demo](assets/appdemo1.gif)
 
 ---
 
@@ -56,7 +56,7 @@ Inspired by Brian Tracy’s **Eat That Frog** method, the app helps users tackle
 
 ## 🎥 Full Demo
 
-[![Watch the demo](assets/preview.png)](https://youtu.be/Ah2tnrWzFPs)
+[![Watch the demo](assets/preview1.png)](https://youtu.be/Ah2tnrWzFPs)
 
 
 ---
