@@ -58,6 +58,7 @@ Inspired by Brian Tracy’s **Eat That Frog** method, the app helps users tackle
 
 ---
 
+
 ## 🎥 Full Demo
 
 
@@ -71,3 +72,11 @@ Inspired by Brian Tracy’s **Eat That Frog** method, the app helps users tackle
 Built by [Yusuf Kuru](https://github.com/yusufcku)  
 
 ---
+
+## Updates
+
+-Working on a new UI design as well as a new logo.
+
+![Logo](images/newlogo.png)
+
+![NewUI](images/newui.png)
