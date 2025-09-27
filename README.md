@@ -77,6 +77,6 @@ Built by [Yusuf Kuru](https://github.com/yusufcku)
 
 -Working on a new UI design as well as a new logo.
 
-![Logo](images/newlogo.png)
+![Logo](assets/newlogo.png)
 
-![NewUI](images/newui.png)
+![NewUI](assets/newui.png)
